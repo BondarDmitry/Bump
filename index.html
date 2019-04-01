@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+
+    <title>Bump Business</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800,900&amp;subset=cyrillic" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link href="vendors/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="vendors/fullPage/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendors/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="vendors/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+<body>
+
+<nav id="header" class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#main-mobile">
+            <img src="img/logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul id="navbar-nav" class="navbar-nav">
+                <li data-menuanchor="Main" class="nav-item active">
+                    <a class="nav-link" href="#Main">Main page <span class="sr-only">(current)</span></a>
+                </li>
+                <li data-menuanchor="Numbers" class="nav-item">
+                    <a class="nav-link" href="#Numbers">Numbers</a>
+                </li>
+                <li data-menuanchor="AboutUs" class="nav-item">
+                    <a class="nav-link" href="#AboutUs">About us</a>
+                </li>
+                <li data-menuanchor="OurBumps" class="nav-item">
+                    <a class="nav-link" href="#OurBumps">Our Bumps</a>
+                </li>
+                <li data-menuanchor="PriceList" class="nav-item">
+                    <a class="nav-link" href="#PriceList">Price list</a>
+                </li>
+                <li data-menuanchor="ContactUs" class="nav-item">
+                    <a class="nav-link" href="#ContactUs">Contact us</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav-mobile">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#main-mobile">Main page <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#numbers-mobile">Numbers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutus-mobile">About us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#ourbumps-mobile">Our Bumps</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#pricelist-mobile">Price list</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contactus-mobile">Contact us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="fullPage">
+    <section class="section main active">
+        <div id="main-mobile" class="container">
+            <div class="main-header col-xs-16 col-lg-11 col-xxl-12 mx-auto">
+                <p class="mobile-title">The second birth for your coin.</p>
+                <div class="row main-header-wrapper">
+                    <div class="coin-type-wrapper">
+                        <p class="coin-type__title">Type your coin here:</p>
+                        <div class="coin-type">
+                            <input type="text" placeholder="???">
+                            <p>BTC</p>
+                        </div>
+                    </div>
+                    <div class="coin-price-vol">
+                        <div class="coin-item">
+                            <p class="coin-item__title">Price:</p>
+                            <p class="coin-item__quantity price-quantity"></p>
+                            <p class="coin-item__currency">BTC</p>
+                        </div>
+                        <div class="coin-item">
+                            <p class="coin-item__title">Vol:</p>
+                            <p class="coin-item__quantity vol-quantity"></p>
+                            <p class="coin-item__currency">BTC</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-body col-xs-16 col-lg-11 col-xxl-12 mx-auto">
+                <div class="row main-body-wrapper">
+                    <div class="main-body-logo col-md-4">
+                        <div class="img-wrapper">
+                            <img src="img/logo.png" alt="Logo">
+                        </div>
+                        <p class="main-logo__title text-center">The second birth for your coin.</p>
+                    </div>
+                    <div class="main-body-chart offset-md-2 offset-lg-0 col-md-12 col-lg-11">
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper falling-candle">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-candle-wrapper">
+                            <div class="chart-candle__body"></div>
+                            <div class="chart-candle__showing"></div>
+                        </div>
+                        <div class="chart-vertical-grid">
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                            <div class="vertical-grid-block"></div>
+                        </div>
+                        <div class="chart-horizontal-grid">
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                            <div class="horizontal-grid-block"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-1 vertical-scale">
+                        <p></p>
+                        <p>108150</p>
+                        <p>108050</p>
+                        <p>107950</p>
+                        <p>107850</p>
+                        <p>107750</p>
+                        <p>107650</p>
+                        <p></p>
+                    </div>
+                    <div class="offset-lg-3 offset-md-1 col-md-14 col-lg-13 horizontal-scale">
+                        <p>12:19</p>
+                        <p>12:29</p>
+                        <p>12:49</p>
+                        <p>13:19</p>
+                        <p>13:39</p>
+                        <p>13:59</p>
+                        <p>14:19</p>
+                        <p>14:29</p>
+                        <p>14:49</p>
+                        <p>15:09</p>
+                        <p>15:29</p>
+                        <p>15:49</p>
+                        <p>16:19</p>
+                        <p>16:39</p>
+                        <p>16:59</p>
+                    </div>
+                </div>
+            </div>
+            <div class="main-footer">
+                <div class="row">
+                    <p class="main-footer__title text-center col-16">Increase your coin right now!</p>
+                    <button type="button" class="green-button mx-auto animated infinite flash" id="rerender">Try it!</button>
+                    <button type="button" class="green-button green-button-mobile mx-auto animated infinite flash" id="rerender-mobile">Try it!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section numbers">
+        <div id="numbers-mobile" class="container">
+            <div class="row">
+                <div class="section-title col-lg-16">
+                    <h3 class="text-center">Numbers</h3>
+                </div>
+                <div class="numbers-item mx-auto col-lg-9">
+                    <div class="iconWrapper mx-auto">
+                        <img src="img/icon-1.png" alt="investors-icon">
+                    </div>
+                    <p class="numbers-item__text-bold text-center">+<span class="investor-q">34500</span> BTC</p>
+                    <p class="numbers-item__text-green text-center">potential investors ready to invest about</p>
+                </div>
+                <div class="numbers-item mx-auto col-lg-9">
+                    <div class="iconWrapper mx-auto">
+                        <img src="img/icon-2.png" alt="investors-icon">
+                    </div>
+                    <p class="numbers-item__text-bold text-center">
+                        <span class="min-coins">200</span> - <span class="max-coins">1500</span> BTC</p>
+                    <p class="numbers-item__text-green text-center">in your coin.</p>
+                </div>
+                <div class="text-center href-block d-inline-block col-lg-16">
+                    <a href="#AboutUs">
+                        <img src="img/arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section about-us-block">
+        <div id="aboutus-mobile" class="section-wrapper">
+            <div class="about-us">
+                <div class="about-us-wrapper">
+                    <div class="about-us__info">
+                        <div class="section-title">
+                            <h3>About Us</h3>
+                        </div>
+                        <div class="about-us__info-text text-left">
+                            <p>We are a large community in the sphere of purchases amount of cryptocoins in huge volumes
+                                These purchases allow our customers to make a profit in a short time due to a change in
+                                the exchange rate of a certain coin.
+                            </p>
+                            <p>Now Imagine, that these large volumes will affect your coin. As a result, you will receive
+                                a huge revenue from the sale of this coin and interest in it. And thanks to the confidentiality
+                                of our company, the whole process will be anonymous.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="about-us__guarantees text-left">
+                        <div class="section-title">
+                            <h3>Guarantees</h3>
+                        </div>
+                        <div class="guarantees-slider">
+                            <div class="guarantees-slide">
+                                <div class="iconWrapper mx-auto">
+                                    <img src="img/icon-3.png" alt="">
+                                </div>
+                                <div class="guarantees-slide__text text-center">
+                                    <h4>Great BTC Volume</h4>
+                                    <div class="slide-text-wrapper">
+                                        <p class="w-75 mx-auto">Our audience waits for our signal everyday and
+                                            ready to invest money to your coin at any time.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guarantees-slide">
+                                <div class="iconWrapper mx-auto">
+                                    <img src="img/icon-4.png" alt="">
+                                </div>
+                                <div class="guarantees-slide__text text-center">
+                                    <h4>Reliability</h4>
+                                    <div class="slide-text-wrapper">
+                                        <p class=" mx-auto">We are an active and stable company that has
+                                            experience in this industry. Our company is fully responsible for the services
+                                            provided. These all makes us a reliable provider of services in the crypto sphere. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guarantees-slide">
+                                <div class="iconWrapper mx-auto">
+                                    <img src="img/data-privacy.png" alt="">
+                                </div>
+                                <div class="guarantees-slide__text text-center">
+                                    <h4>Client Privacy</h4>
+                                    <div class="slide-text-wrapper">
+                                        <p class="w-75 mx-auto">Depending on your wishes, all data on your use of our services
+                                            will remain strictly confidential. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="guarantees-slide">
+                                <div class="iconWrapper mx-auto">
+                                    <img src="img/profits.png" alt="">
+                                </div>
+                                <div class="guarantees-slide__text text-center">
+                                    <h4>Second Birth</h4>
+                                    <div class="slide-text-wrapper">
+                                        <p class="w-75 mx-auto">Thanks to the large turnover of your coins in a short time,
+                                            investors notice this activity on the market, because of what the sales volumes grow
+                                            and remain stable. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="our-team">
+               <div class="our-team-wrapper">
+                   <h3 class="our-team__title">Our team</h3>
+                   <div class="team-slider">
+                       <div class="team-slide">
+                           <div class="team-slide__text">
+                               <h4 class="team-slide__name">Lev Sobolev</h4>
+                               <p class="team-slide__position">CEO of the BUMP</p>
+                           </div>
+                           <div class="team-slide__img">
+                               <img src="img/team/CEO-width.jpg" alt="">
+                           </div>
+                       </div>
+                       <div class="team-slide">
+                           <div class="team-slide__text">
+                               <h4 class="team-slide__name">Oleg Savin</h4>
+                               <p class="team-slide__position">Head of the Crypto Analytics Team</p>
+                           </div>
+                           <div class="team-slide__img">
+                               <img src="img/team/headofcrypto-width.jpg" alt="">
+                           </div>
+                       </div>
+                       <div class="team-slide">
+                           <div class="team-slide__text">
+                               <h4 class="team-slide__name">Dmitry Tyrov</h4>
+                               <p class="team-slide__position">IT Director</p>
+                           </div>
+                           <div class="team-slide__img">
+                               <img src="img/team/ITdirector-width.jpg" alt="">
+                           </div>
+                       </div>
+                       <div class="team-slide">
+                           <div class="team-slide__text">
+                               <h4 class="team-slide__name">Valeriy  Mironov</h4>
+                               <p class="team-slide__position">PR Director</p>
+                           </div>
+                           <div class="team-slide__img">
+                               <img src="img/team/PR-width.jpg" alt="">
+                           </div>
+                       </div>
+                       <div class="team-slide">
+                           <div class="team-slide__text">
+                               <h4 class="team-slide__name">Viktor Kolobov</h4>
+                               <p class="team-slide__position">Design and Video Production</p>
+                           </div>
+                           <div class="team-slide__img">
+                               <img src="img/team/VideoandDesign-width.jpg" alt="">
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+        </div>
+    </section>
+    <section class="section our-bumps">
+        <div id="ourbumps-mobile" class="container">
+            <div class="row">
+                <div class="section-title col-lg-16 text-center">
+                    <h3>Our Bumps</h3>
+                </div>
+                <div class="bumps-slider col-lg-16">
+                    <div class="bump-slide">
+                        <div class="slide-wrapper row">
+                            <div class="bump-slide__text offset-lg-1 col-lg-4">
+                                <p class="bump-slide__title">BUMP #33</p>
+                                <div class="bump-slide__date text-block w-100">
+                                    <p class="bump-slide__date-title">DATE: </p>
+                                    <span>23.02.18. 19-30. Moscow time</span>
+                                </div>
+                                <div class="bump-slide__pair text-block w-100">
+                                    <p class="bump-slide__pair-title">PAIR: </p>
+                                    <span>LUN/BTC</span>
+                                </div>
+                                <div class="bump-slide_exchange text-block w-100">
+                                    <p class="bump-slide__pair-title">EXCHANGE: </p>
+                                    <a href="https://www.binance.com/" target="_blank">Binance.com</a>
+                                </div>
+                                <div class="bump-slide__proof">
+                                    <a class="green-button" href="https://t.me/joinchat/AAAAAFE1NYRO5g5YdQz3Kg" target="_blank">PROOF</a>
+                                    <a class="green-button green-button-mobile" href="https://t.me/joinchat/AAAAAFE1NYRO5g5YdQz3Kg" target="_blank">PROOF</a>
+                                    <div class="proof-pop-up">
+                                        <div class="proof-pop-up__text">
+                                            <p><a href="https://t.me/joinchat/AAAAAFE1NYRO5g5YdQz3Kg">Subscribe to channel</a>,write down “LUN” or
+                                                “฿UMP #33 LUN/BTC” in the search and find it out.
+                                            </p>
+                                            <p>Or <a href="https://t.me/bump_admin">write to me</a>, and I will forward the signal to you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bump-slide__img col-lg-9 mx-auto">
+                                <img src="img/desktop-1.png" alt="">
+                                <a href="https://www.binance.com/trade.html?symbol=LUN_BTC" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bump-slide">
+                        <div class="slide-wrapper row">
+                            <div class="bump-slide__text offset-lg-1 col-lg-4">
+                                <p class="bump-slide__title">BUMP #37</p>
+                                <div class="bump-slide__date text-block w-100">
+                                    <p class="bump-slide__date-title">DATE: </p>
+                                    <span>27.02.18. 19-00. Moscow time</span>
+                                </div>
+                                <div class="bump-slide__pair text-block w-100">
+                                    <p class="bump-slide__pair-title">PAIR: </p>
+                                    <span>LUN/BTC</span>
+                                </div>
+                                <div class="bump-slide_exchange text-block w-100">
+                                    <p class="bump-slide__pair-title">EXCHANGE: </p>
+                                    <a href="https://www.binance.com/" target="_blank">Binance.com</a>
+                                </div>
+                                <div class="bump-slide__proof">
+                                    <a class="green-button" href="https://t.me/joinchat/AAAAAFE1NYRO5g5YdQz3Kg" target="_blank">PROOF</a>
+                                    <a class="green-button green-button-mobile" href="https://t.me/joinchat/AAAAAFE1NYRO5g5YdQz3Kg" target="_blank">PROOF</a>
+                                    <div class="proof-pop-up">
+                                        <div class="proof-pop-up__text">
+                                            <p><a href="https://t.me/joinchat/AAAAAFE1NYRO5g5YdQz3Kg">Subscribe to channel</a>,write down “LUN” or
+                                                “฿UMP #37 LUN/BTC” in the search and find it out.
+                                            </p>
+                                            <p>Or <a href="https://t.me/bump_admin">write to me</a>, and I will forward the signal to you.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bump-slide__img col-lg-9 mx-auto">
+                                <img src="img/desktop-2.png" alt="">
+                                <a href="https://www.binance.com/trade.html?symbol=LUN_BTC" target="_blank"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section price-list">
+        <div id="pricelist-mobile" class="container">
+            <div class="row">
+                <div class="section-title col-lg-16">
+                    <h3 class="text-center">Price List</h3>
+                </div>
+                <div class="col-md-8 text-center price-list-item">
+                    <div class="price-pumps mx-auto">
+                        <div class="iconWrapper">
+                            <img src="img/icon-5.png" alt="">
+                        </div>
+                        <h4 class="d-inline-block text-left">International<br>Exchange Pumps</h4>
+                    </div>
+                    <ul class="d-inline-block text-left pumps-list">
+                        <li>Bittrex</li>
+                        <li>Binance</li>
+                        <li>Bitmex</li>
+                        <li>Tidex and etc.</li>
+                    </ul>
+                    <div class="price-pumps__text">
+                        <p class="price-pumps__text-title">Price:</p>
+                        <span class="price-pumps__text-pice">4 BTC</span>
+                    </div>
+                    <a href="#ContactUs" class="green-button">Contact Us</a>
+                    <a href="#contactus-mobile" class="green-button green-button-mobile">Contact Us</a>
+                </div>
+                <div class="col-md-8 text-center price-list-item">
+                    <div class="price-pumps mx-auto">
+                        <div class="iconWrapper">
+                            <img src="img/icon-6.png" alt="">
+                        </div>
+                        <h4 class="d-inline-block text-left">International<br>Exchange Pumps</h4>
+                    </div>
+                    <ul class="d-inline-block text-left pumps-list">
+                        <li>Livecoin</li>
+                        <li>Yobit</li>
+                        <li>Exmo and ect.</li>
+                    </ul>
+                    <div class="price-pumps__text">
+                        <p class="price-pumps__text-title">Price:</p>
+                        <span class="price-pumps__text-pice">1 BTC</span>
+                    </div>
+                    <a href="#ContactUs" class="green-button">Contact Us</a>
+                    <a href="#contactus-mobile" class="green-button green-button-mobile">Contact Us</a>
+                </div>
+                <div class="href-to-bottom text-center d-inline-block col-lg-16">
+                    <a href="#ContactUs">
+                        <img src="img/arrow.png" alt="">
+                    </a>
+                    <a class="mobile-only" href="#contactus-mobile">
+                        <img src="img/arrow.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section contact-us">
+        <div id="contactus-mobile" class="container">
+            <div class="row">
+                <div class="section-title col-16">
+                    <h3 class="text-center">Contact Us</h3>
+                </div>
+                <div class="col-sm-14 col-lg-10 mx-auto contact-list">
+                    <div class="d-inline-block text-center contact-list__item">
+                        <div class="iconWrapper">
+                            <img src="img/contact-1.png" alt="">
+                        </div>
+                        <h3>Telegram</h3>
+                        <a href="https://t.me/btccoin" target="_blank">@btccoin</a>
+                    </div>
+                    <div class="d-inline-block text-center contact-list__item">
+                        <div class="iconWrapper">
+                            <img src="img/contact-2.png" alt="">
+                        </div>
+                        <h3>Manager</h3>
+                        <a href="javascript:void(0);" target="_blank">write us now</a>
+                    </div>
+                    <!--<div class="d-inline-block text-center contact-list__item">-->
+                        <!--<div class="iconWrapper">-->
+                            <!--<img src="img/contact-3.png" alt="">-->
+                        <!--</div>-->
+                        <!--<h3>E-Mail</h3>-->
+                        <!--<a href="mailto:btccoin@btc.com" target="_blank">btccoin@btc.com</a>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+<script src="vendors/jquery/jquery-3.3.1.min.js"></script>
+<script src="vendors/jquery/jquery.spincrement.min.js"></script>
+<script src="vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="vendors/fullPage/scrolloverflow.min.js"></script>
+<script type="text/javascript" src="vendors/fullPage/jquery.fullPage.js"></script>
+<script type="text/javascript" src="vendors/slick/slick.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>
